@@ -1,7 +1,7 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: black;
-    background-image: url("background_form.jpeg");
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url("new_background_image.jpg"); /* Change the background image */
     margin: 0;
     padding: 0;
 }
@@ -9,21 +9,24 @@ body {
 h1 {
     text-align: center;
     margin-top: 20px;
-    color: white;
+    color: #333; /* Dark gray color for the title */
 }
 
 form {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: transparent;
-    padding: 30px;
-    color: white;
+    max-width: 800px; /* Slightly smaller width */
+    margin: 20px auto; /* Added top and bottom margin */
+    background-color: #fff; /* White background for the form */
+    padding: 40px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #333; /* Dark gray text */
 }
 
 label {
     display: block;
-    margin-top: 10px;
-    font-weight: bold;
+    margin-top: 15px;
+    font-weight: normal; /* Less bold */
+    color: #666; /* Lighter text for labels */
 }
 
 input[type="text"],
@@ -33,107 +36,82 @@ input[type="date"],
 textarea,
 select {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd; /* Lighter border */
+    border-radius: 4px;
+    font-size: 14px; /* Smaller font size */
+    background-color: #fafafa; /* Light gray background */
 }
 
+/* Restyling checkboxes and radio buttons */
 input[type="checkbox"],
 input[type="radio"] {
-    margin-right: 5px;
-    
+    margin-right: 10px;
 }
 
 .buttons {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 input[type="submit"],
 input[type="reset"] {
-    padding: 12px 24px;
-    background-color: #007BFF;
+    padding: 15px 30px;
+    background-color: #5cb85c; /* Green color */
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: #00b36e;
-    margin-left: 30px;
-    margin-right: 30px;
+    background-color: #449d44; /* Darker green on hover */
 }
 
-/* Style checkboxes and radio buttons */
+/* New style for checkboxes and radio buttons labels */
 input[type="checkbox"] + label,
 input[type="radio"] + label {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 15px;
     cursor: pointer;
+    color: #666; /* Matching label color */
 }
 
-/* Style the likelihood of recommending dropdown */
+/* Updated select dropdown styling */
 select {
-    appearance: none; /* Remove default arrow on some browsers */
-    -webkit-appearance: none;  /*Remove default arrow on WebKit browsers */
-    -moz-appearance: none; /*Remove default arrow on Firefox*/
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-    background: #ffffff;
-    color: black;
-    background-repeat: no-repeat;
-    background-position: right center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("dropdown_arrow.png"); /* Custom dropdown arrow */
+    background-color: #fafafa;
+    color: #333;
+    /* Other properties remain the same */
 }
 
-/* Style the Raffle text box */
+/* Style updates for the Raffle text box */
 input[type="text"][name="raffle"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
+    /* Inherits styles from other text inputs */
 }
 
-.rad{
-    padding-top: 15px;
-}
-
-
-/* Modal Content/Box */
+/* Updated Modal Content/Box styling */
 .modal-content {
-  background-color: rgb(0, 0, 0);
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  background-color: #fff;
+  color: #333;
+  /* Other properties remain the same */
 }
 
-/* The Close Button */
+/* Updated Close Button styling */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+  color: #aa0000; /* Red color for close button */
+  /* Other properties remain the same */
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+  color: #ff0000; /* Brighter red on hover/focus */
 }
-
