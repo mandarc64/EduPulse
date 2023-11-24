@@ -1,9 +1,9 @@
 pipeline {
    environment {
         registry = "mandarc64/swe"
-        registryCredential = 'myKubeconfigID'
+        registryCredential = 'DockerHubCredentials'
         TIMESTAMP = new Date().format("yyyy-MM-dd_HH-mm-ss")
-        KUBECONFIG_CREDENTIALS_ID = 'K8scluster'
+        KUBECONFIG_CREDENTIALS_ID = 'myKubeconfigID'
         DOCKER_IMAGE = "mandarc64/swe:${env.TIMESTAMP}"
     }
     agent any
