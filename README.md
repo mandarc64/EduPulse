@@ -1,4 +1,4 @@
-# Project Name: EduPulse: Capturing the Beat of Student Opinions
+# EduPulse: Capturing the Beat of Student Opinions
 
 ## Table of Contents
 - [Overview](#overview)
